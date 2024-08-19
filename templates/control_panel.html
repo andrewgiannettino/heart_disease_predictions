@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Control Panel</h1>
+    
+    <h2>Add New Patient</h2>
+    <form id="addPatientForm" action="/add_patient" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        
+             
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+
+        <label for="cholesterol">cholesterol:</label>
+        <input type="text" id="cholesterol" name="cholesterol" required>
+
+        <label for="blood pressure">blood pressure:</label>
+        <input type="text" id="blood presuure" name="blood pressure" required>
+
+        <label for="blood sugar">blood sugar:</label>
+        <input type="text" id="blood sugar" name="blood sugar" required>
+
+        <label for="unnamed: 0">unnamed: 0:</label>
+        <input type="text" id="unnamed: 0" name="unnamed: 0" required>
+
+        <label for="stress level">stress level:</label>
+        <input type="text" id="stress level" name="stress level" required>
+
+        <label for="exercise hours">exercise hours:</label>
+        <input type="text" id="exercise hours" name="exercise hours" required>
+        
+        <label for="smoking_former">Smoking Former:</label>
+        <input type="text" id="smoking_former" name="smoking_former" required>
+
+        <label for="smoking_never">Smoking Never:</label>
+        <input type="text" id="smoking_never" name="smoking_never" required>
+
+        <label for="alcohol intake_moderate">Alochol Intake Moderate:</label>
+        <input type="text" id="alcohol intake_moderate" name="alocohol intake_moderate" required>
+
+        <label for="Obesity_Yes">Obesity_Yes:</label>
+        <input type="text" id="Obesity_Yes" name="Obesity_Yes" required>
+
+        <label for="Gender_Male">Gender_Male:</label>
+        <input type="text" id="Gender_Male" name="Gender_Male" required>
+
+        <label for="Chest Pain Type_Non-anginal Pain">Chest Pain Type_Non-anginal Pain:</label>
+        <input type="text" id="Chest Pain Type_Non-anginal Pain" name="Chest Pain Type_Non-anginal Pain" required>
+
+        <label for="Family History_Yes">Family History_Yes:</label>
+        <input type="text" id="Family History_Yes " name="Family History_Yes" required>
+
+        <label for="Exercise Induced Angina_Yes">Exercise Induced Angina_Yes:</label>
+        <input type="text" id="Exercise Induced Angina_Yes" name="Exercise Induced Angina_Yes" required>
+
+        <label for="Diabetes_Yes ">Diabetes_Yes:</label>
+        <input type="text" id="Diabetes_Yes" name="Diabetes_Yes" required>
+
+        <label for="Alcohol Intake_None">Alcohol Intake_None:</label>
+        <input type="text" id="Alcohol Intake_None" name="Alcohol Intake_None" required>
+
+        <label for="Chest Pain Type_Atypical Angina">Chest Pain Type_Atypical Angina:</label>
+        <input type="text" id="Chest Pain Type_Atypical Angina" name="Chest Pain Type_Atypical Angina" required>
+
+        <label for="Chest Pain Type_Typical Angina">Chest Pain Type_Typical Angina:</label>
+        <input type="text" id="Chest Pain Type_Typical Angina" name="Chest Pain Type_Typical Angina" required>
+
+        <label for="hr">Heart Rate:</label>
+        <input type="number" id="hr" name="hr" required>
+        
+        <button type="submit">Add Patient</button>
+    </form>
+    
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
